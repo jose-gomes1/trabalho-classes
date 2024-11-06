@@ -1,8 +1,8 @@
 #include "all.h"
 
 int main() {
-    Carro Carro1("Toyota Corolla", "1.8L", "Pneus Radiais", 180, 4);
-    Mota Mota1("Honda CB500", "500cc", "Pneus Desportivos", 200, "Guiadão Desportivo");
+    Carro Carro1("Toyota Corolla", "Pneus Radiais", "1.8L", 180, 4);
+    Mota Mota1("Honda CB500", "Pneus Desportivos", "500cc", 200, "Guiadão Desportivo");
 
     int opcao;
     do {

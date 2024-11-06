@@ -43,7 +43,7 @@ void Carro::menuCarro()
         cout << "6. Ligar Luzes\n";
         cout << "7. Desligar Luzes\n";
         cout << "0. Sair\n";
-        cout << "Escolha uma opção: ";
+        cout << "Escolha uma opcao: ";
         cin >> opcao;
 
         switch (opcao) {

@@ -2,7 +2,7 @@
 
 void Mota::empinar()
 {
-    cout << "A tua mota está a empinar\n"; //este método foi a única ideia que tive para a mota
+    cout << "A tua mota esta a empinar\n"; //este método foi a única ideia que tive para a mota
 }
 
 void Mota::menuMota()
@@ -17,7 +17,7 @@ void Mota::menuMota()
         cout << "5. Ligar Luzes\n";
         cout << "6. Desligar Luzes\n";
         cout << "0. Sair\n";
-        cout << "Escolha uma opção: ";
+        cout << "Escolha uma opcao: ";
         cin >> opcao;
 
         switch (opcao) {
