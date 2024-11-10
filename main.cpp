@@ -2,7 +2,7 @@
 
 int main() {
     Carro Carro1("Toyota Corolla", "Pneus Radiais", "1.8L", 180, 4);
-    Mota Mota1("Honda CB500", "Pneus Desportivos", "500cc", 200, "Guiadão Desportivo");
+    Mota Mota1("Honda CB500", "Pneus Desportivos", "500cc", 200, "Guiadao Desportivo");
 
     int opcao;
     do {
