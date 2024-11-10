@@ -5,6 +5,12 @@ void Mota::empinar()
     cout << "A tua mota esta a empinar\n"; //este método foi a única ideia que tive para a mota
 }
 
+void Mota::mostrarDetalhes()
+{
+    Veiculo::mostrarDetalhes();
+    cout << "Tipo de guidao:" << tipoDeGuidao << "\n";
+}
+
 void Mota::menuMota()
 {
     int opcao;

@@ -14,7 +14,7 @@ class Veiculo{
     int velocidadeMax;
     int velocidadeAtual = 0;
     bool luzes = false;
-    void mostrarDetalhes();
+    virtual void mostrarDetalhes();
     void acelerar();
     void travar();
     void ligarLuzes();

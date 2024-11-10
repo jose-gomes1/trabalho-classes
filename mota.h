@@ -10,6 +10,7 @@ class Mota : public Veiculo{
     Mota(string nome, string rodas, string motor, int velocidadeMax, string tipoDeGuidao)
         : Veiculo(nome, rodas, motor, velocidadeMax), tipoDeGuidao(tipoDeGuidao) {}
     void empinar();
+    void mostrarDetalhes() override;
     void menuMota();
 };
 

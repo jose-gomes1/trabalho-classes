@@ -7,11 +7,13 @@ void Carro::abrirPortas()
     cin.ignore();
     getline(cin, a);
     int portas = stoi(a);
-    if(portas <= numPortas){
+    if(portas + portasAbertas <= numPortas){
+        portasAbertas += portas;
         cout << "Abriste " << portas << " portas\n";
+        cout << "Total de portas abertas: " << portasAbertas << endl;
     }else{
-        cout << "O teu carro nao tem " << portas << " portas";
-        cout << "Tem " << numPortas << " portas\n";
+        cout << "O teu carro nao tem " << portas << " portas para abrir\n";
+        cout << "Tem " << numPortas << " portas\nE" << portasAbertas << " portas abertas\n";
     }
 }
 
@@ -22,12 +24,20 @@ void Carro::fecharPortas()
     cin.ignore();
     getline(cin, a);
     int portas = stoi(a);
-    if(portas <= numPortas){
+    if (portas <= portasAbertas) {
+        portasAbertas -= portas;
         cout << "Fechaste " << portas << " portas\n";
+        cout << "Total de portas abertas: " << portasAbertas << endl;
     }else{
-        cout << "O teu carro não tem " << portas << " portas";
-        cout << "Tem " << numPortas << " portas\n";
+        cout << "O teu carro nao tem " << portas << " portas para fechar\n";
+        cout << "Tem " << portasAbertas << " portas abertas\n";
     }
+}
+
+void Carro::mostrarDetalhes()
+{
+    Veiculo::mostrarDetalhes();
+    cout << "Numero de portas: " << numPortas << "\n";
 }
 
 void Carro::menuCarro()
