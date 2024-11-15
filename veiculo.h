@@ -5,13 +5,14 @@
 using namespace std;
 
 class Veiculo{
-    public:
-    // Construtor que inicializa o nome do veículo
-    Veiculo(string nome, string rodas, string motor, int velocidadeMax);
+    private:
     string nome;
     string rodas;
     string motor;
     int velocidadeMax;
+    public:
+    // Construtor que inicializa o nome do veículo
+    Veiculo(string nome, string rodas, string motor, int velocidadeMax);
     int velocidadeAtual = 0;
     bool luzes = false;
     virtual void mostrarDetalhes();
